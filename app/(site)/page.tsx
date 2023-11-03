@@ -1,3 +1,4 @@
+"use client";
 import Header from "@/components/Header";
 import ListItem from "@/components/ListItem";
 import image from "@/public/images/liked.png";
@@ -6,7 +7,7 @@ export default function Home() {
     <div
       className="
   bg-neutral-900
-  rounded-lg
+     rounded-lg
   h-full
   w-full
   overflow-hidden

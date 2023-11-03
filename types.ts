@@ -44,7 +44,7 @@ export interface Subscription {
     status?: Stripe.Subscription.AutomaticTax;
     metadata?: Stripe.Metadata;
     price_id?: string;
-    quantity?: string;
+    quantity?: number;
     cancel_at_period_end?: boolean;
     created: string;
     current_period_start: string;
