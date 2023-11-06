@@ -64,10 +64,11 @@ const Modal: React.FC<ModalProps> = ({
             leading-normal
             text-center"
             >
+              
               {description}
             </Dialog.Description>
             <div>{children}</div>
-            <Dialog.Close asChild>
+            <Dialog.Close asChild >
               <button>
                 <IoMdClose />
               </button>
