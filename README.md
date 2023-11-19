@@ -1,1 +1,1 @@
-this is the music application using typescript, next.sj, stripe, supabase, postgtersql  using this technologies which and try make it as user friendly as i can
+this is the music application using typescript, next.sj, stripe, supabase, postgtersql  using this technologies which and try make it as user friendly 
