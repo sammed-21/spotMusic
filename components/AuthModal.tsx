@@ -20,9 +20,10 @@ const AuthModal = (props: Props) => {
   useEffect(() => {
     if (session) {
       router.refresh();
+      console.log(session);
       onClose();
     }
-  });
+  }, [session, router, onClose]);
   const onChange = (open: boolean) => {
     if (!open) {
       onClose();
