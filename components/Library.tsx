@@ -3,10 +3,24 @@ import { TbPlaylist } from "react-icons/tb";
 import { AiOutlinePlus } from "react-icons/ai";
 import { GiMusicalNotes } from "react-icons/gi";
 import React from "react";
-const onClick = () => {
-  //handle upload later
-};
+import useAuthModal from "@/hooks/useAuthModal";
+import { useUser } from "@/hooks/useUser";
+import useUploadModal from "@/hooks/useUploadModal";
+
 const Library = () => {
+  const authModal = useAuthModal();
+  const uploadModal = useUploadModal();
+
+  const { user, subscription } = useUser();
+  const onClick = () => {
+    if (!user) {
+      console.log("sam");
+      return authModal.onOpen();
+    }
+    console.log("should open upload");
+    uploadModal.onOpen();
+    //handle upload later
+  };
   return (
     <div className="flex flex-col ">
       <div

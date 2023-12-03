@@ -29,7 +29,7 @@ const Modal: React.FC<ModalProps> = ({
             className="
         fixed
         drop-shadow-md
-        border
+        border 
         border-neutral-700
         top-[50%]
         left-[50%]

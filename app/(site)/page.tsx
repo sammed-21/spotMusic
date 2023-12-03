@@ -2,6 +2,8 @@
 import Header from "@/components/Header";
 import ListItem from "@/components/ListItem";
 import image from "@/public/images/liked.png";
+export const revalidate = 0;
+
 export default function Home() {
   return (
     <div
@@ -14,7 +16,7 @@ export default function Home() {
   overflow-y-auto
   "
     >
-      <Header>
+      <Header className="">
         <div className="mb-2">
           <h1
             className="
