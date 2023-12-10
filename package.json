@@ -16,6 +16,7 @@
     "@supabase/auth-ui-react": "^0.4.6",
     "@supabase/auth-ui-shared": "^0.1.8",
     "next": "latest",
+    "query-string": "^8.1.0",
     "react": "latest",
     "react-dom": "latest",
     "react-hook-form": "^7.48.2",
