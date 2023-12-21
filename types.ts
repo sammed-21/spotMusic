@@ -11,6 +11,10 @@ export interface UserDetails{
 
 
 }
+export interface ProductWithPrice extends Product {
+  prices?: Price[];
+}
+
 export interface Product {
     id: string;
     active?: boolean;
@@ -30,7 +34,7 @@ export interface Price {
     type?: Stripe.Price.Type;
     interval?: Stripe.Price.Recurring.Interval;
     interval_count?: number;
-    trial_period_days?: number | never;
+    trial_period_days?: number | never | null;
     metadata?: Stripe.Metadata;
     products?: Product;
 
