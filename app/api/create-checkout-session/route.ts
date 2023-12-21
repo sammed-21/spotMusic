@@ -36,6 +36,7 @@ export async function POST(
       mode: 'subscription',
       allow_promotion_codes: true,
       subscription_data: {
+        // @ts-ignore
         trial_from_plan: true,
         metadata
       },
